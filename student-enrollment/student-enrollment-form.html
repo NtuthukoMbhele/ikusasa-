@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-sm-12">
+                <p1><strong>Leaner informantion </strong>(please use full name ,no nickname)<p1>
+                        <form id="contact-form" method="post" action="php/processorDB.php" role="form">
+                            <div class="messages">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="firstName" class="form-control"
+                                                    placeholder="Please enter your firstname *" required="required"
+                                                    data-error="Firstname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="lastName"
+                                                    class="form-control" placeholder="Please enter your lastname *"
+                                                    required="required" data-error="Lastname is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">IDNumber *</label>
+                                                <input id="form_phone" type="tel" name="idNum" class="form-control"
+                                                    placeholder="Please enter your identity number">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Phone</label>
+                                                <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                    placeholder="Please enter your phone">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_address">Address *</label>
+                                                <input id="form_address" type="address" name="address"
+                                                    class="form-control" placeholder="Please enter your address *"
+                                                    required="required" data-error="Valid address is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">City</label>
+                                                <input id="form_phone" type="tel" name="city" class="form-control"
+                                                    placeholder="Please enter your city">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_address">Course Choice *</label>
+                                                <input id="form_address" type="text" name="course" class="form-control"
+                                                    placeholder="Please enter your course of your choice *"
+                                                    required="required" data-error="Cousre is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Highest Qualifications</label>
+                                                <input id="form_phone" type="text" name="grade" class="form-control"
+                                                    placeholder="Please enter your highest qualification">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                                    <p1><strong>ATTACHMENTS</strong>
+                                        <p1>
+                                            <div class="messages">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <p>Copy of ID</p>
+                                                        <input type="file" id="myFile" name="filename">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p>Updated CV</p>
+                                                        <input type="file" id="myFile" name="filename">
+                                                    </div>
+                                                </div><BR>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <p>Qualification</p>
+                                                        <input type="file" id="myFile" name="filename">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p>Cover Letter</p>
+                                                        <input type="file" id="myFile" name="filename">
+                                                    </div>
+                                                </div><BR>
+
+                                            </div>
+                                            <!--Terms and conditions -->
+                                            <br>
+                                            <button
+                                                class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                                type="submit" id="login" name="reg">Submit</button>
+                        </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+</html>
